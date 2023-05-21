@@ -14,4 +14,5 @@ if LOGGED_IN == True:
     st.markdown("Your Streamlit Application Begins here!")
 
 if st.session_state['LOGGED_IN'] == True:
-	st.write("WELCOME!")
+	st.title("CONVERSATIONAL AI ANALYTICS")
+	st.image('https://www.cxtoday.com/wp-content/uploads/2022/04/conversational-analytics.jpg')

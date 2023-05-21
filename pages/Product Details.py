@@ -7,7 +7,6 @@ df = pd.read_csv('Dataset.csv')
 st.set_page_config(page_title="Product Details", page_icon=":bar_chart:", layout="wide")
 
 if st.session_state['LOGGED_IN'] == True:
-	st.write("WELCOME!")
         selected = option_menu(
         	menu_title=None,  # required
         	options=["Accessories", "Appliances", "Home & Kitchen", "Sports & Fitness"],  # required

@@ -6,7 +6,7 @@ import streamlit as st
 df = pd.read_csv('Dataset.csv')
 
 # ---- MAINPAGE ----
-st.title("Amazon Sales Dashboard")
+st.title("SALES DASHBOARD")
 st.markdown("**Website:** https://www.amazon.in/ ")
 st.markdown("##")
 

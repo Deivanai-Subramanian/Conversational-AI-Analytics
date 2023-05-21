@@ -37,3 +37,6 @@ if st.session_state['LOGGED_IN'] == True:
                 df_sportsfitness = df_sportsfitness.sort_values(by=['ratings', 'no_of_ratings'],ascending=[False, False])
                 df_sportsfitness = df_sportsfitness.head(25)
                 st.table(df_sportsfitness)
+		
+else:
+	st.warning("Please Loggin")

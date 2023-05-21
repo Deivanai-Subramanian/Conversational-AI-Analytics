@@ -3,7 +3,7 @@ import plotly.express as px
 import streamlit as st
 
 # ---- READ EXCEL ----
-df = pd.read_csv('https://github.com/Deivanai-Subramanian/Conversational-AI-Analytics/blob/master/Dataset.csv')
+df = pd.read_csv('Dataset.csv')
 st.set_page_config(page_title="Sales Dashboard", page_icon=":bar_chart:", layout="wide")
 
 

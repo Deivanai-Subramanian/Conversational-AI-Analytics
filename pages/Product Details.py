@@ -4,9 +4,9 @@ from streamlit_option_menu import option_menu
 
 # ---- READ EXCEL ----
 df = pd.read_csv('Dataset.csv')
+st.title("PRODUCT DETAILS")
 
 if st.session_state['LOGGED_IN'] == True:
-	st.title("PRODUCT DETAILS")
         selected = option_menu(
         	menu_title=None,  # required
         	options=["Accessories", "Appliances", "Home & Kitchen", "Sports & Fitness"],  # required

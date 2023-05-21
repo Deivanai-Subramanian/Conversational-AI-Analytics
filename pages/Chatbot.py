@@ -4,8 +4,8 @@ import speech_recognition as sr
 import streamlit as st
 from streamlit_chat import message as st_message
 
+df = pd.read_csv('Dataset.csv')
 if st.session_state['LOGGED_IN'] == True:
-	df = pd.read_csv('Dataset.csv')
 	repeater=1
 	def speak(string):        
 	    engine = pyttsx3.init()

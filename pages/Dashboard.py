@@ -9,27 +9,24 @@ st.set_page_config(page_title="Sales Dashboard", page_icon=":bar_chart:", layout
 
 # ---- SIDEBAR ----
 st.sidebar.header("Filter Here:")
-Main_category = st.sidebar.multiselect(
+Main_category = st.multiselect(
     "Select the Main Category:",
     options=df["main_category"].unique(),
     default=df["main_category"].unique()
 )
 df_main_category = df.query("main_category == @Main_category")
 
-Sub_category = st.sidebar.multiselect(
+Sub_category = st.multiselect(
     "Select the Sub-Category:",
     options=df_main_category["sub_category"].unique(),
     default=df_main_category["sub_category"].unique()
 )
 
-Ratings = st.sidebar.multiselect(
+Ratings = st.multiselect(
     "Select by Ratings:",
     options=df["ratings"].unique(),
     default=df["ratings"].unique()
 )
-
-stars = [":star:"*1,":star:"*2,":star:"*3,":star:"*4,":star:"*5]
-check_boxes = [st.sidebar.checkbox(star, key=star) for star in stars]
 
 if((len(Main_category)==0) or (len(Sub_category)==0) or (len(Ratings)==0)):
     st.error("Select all Attributes from sidebar")

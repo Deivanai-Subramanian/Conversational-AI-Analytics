@@ -18,7 +18,7 @@ if st.session_state['LOGGED_IN'] == True:
 	st.image('https://www.cxtoday.com/wp-content/uploads/2022/04/conversational-analytics.jpg')
 	st.write("created by TEAM TECH ASPIRANTS")
 	st.write("This Web App contains four modules:")
-	st.write("1. Home
-		 2. Chatbot
-		 3. Dashboard
-		 4. Product Details")
+	st.write("1. Home")
+	sr.write("2. Chatbot")
+	st.write("3. Dashboard")
+	st.write("4. Product Details")

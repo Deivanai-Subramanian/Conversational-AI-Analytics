@@ -74,7 +74,7 @@ if st.session_state['LOGGED_IN'] == True:
 
 	# SALES BY HOUR [BAR CHART]
 	sales_by_hour = df_selection.groupby(by=["ratings"]).sum()[["no_of_ratings"]]
-		fig_hourly_sales = px.bar(
+	fig_hourly_sales = px.bar(
 		sales_by_hour,
 		x=sales_by_hour.index,
 		y="no_of_ratings",

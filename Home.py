@@ -10,6 +10,8 @@ __login__obj = __login__(auth_token = "pk_prod_27GNYP246PME2HPJZEV7FX35XRX5",
 
 LOGGED_IN = __login__obj.build_login_ui()
 
+st.set_page_config(page_title="Home", page_icon=":bar_chart:", layout="wide")
+
 if LOGGED_IN == True:
     st.markdown("Your Streamlit Application Begins here!")
 

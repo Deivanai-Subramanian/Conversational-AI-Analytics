@@ -11,7 +11,6 @@ st.markdown("**Website:** https://www.amazon.in/ ")
 st.markdown("##")
 
 if st.session_state['LOGGED_IN'] == True:
-	st.write("WELCOME!")
 	# ---- SIDEBAR ----
 	st.subheader("Filter Here:")
 	Main_category = st.multiselect(

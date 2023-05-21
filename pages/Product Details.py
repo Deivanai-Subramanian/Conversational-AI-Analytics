@@ -7,6 +7,7 @@ df = pd.read_csv('Dataset.csv')
 st.set_page_config(page_title="Product Details", page_icon=":bi-bag-heart:", layout="wide")
 
 if st.session_state['LOGGED_IN'] == True:
+	st.title("PRODUCT DETAILS")
         selected = option_menu(
         	menu_title=None,  # required
         	options=["Accessories", "Appliances", "Home & Kitchen", "Sports & Fitness"],  # required

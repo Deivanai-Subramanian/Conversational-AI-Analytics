@@ -17,7 +17,6 @@ if st.session_state['LOGGED_IN'] == True:
 		with sr.Microphone() as source:
 		    audio=r.listen(source)    
 		    text=r.recognize_google(audio)
-		    st.write(text)
 		return (text)
 	    except:
 		speak("the word is not clear,tell again")

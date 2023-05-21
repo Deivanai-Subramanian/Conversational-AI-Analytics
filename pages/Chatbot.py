@@ -31,54 +31,54 @@ if st.session_state['LOGGED_IN'] == True:
 			st_message(text,is_user=True)
 			st_message("Bye")
 			return 1
-	elif text == "product" or text == "i need to purchase " or text == "I need to purchase" or text =="Product":
-		st_message(text,is_user=True)
-		speak("Tell the Main  category from the list ")
-		st_message('The Main Categories are Accesories,Appliances,Sports and Fitness,Home and Appliances')
+		elif text == "product" or text == "i need to purchase " or text == "I need to purchase" or text =="Product":
+			st_message(text,is_user=True)
+			speak("Tell the Main  category from the list ")
+			st_message('The Main Categories are Accesories,Appliances,Sports and Fitness,Home and Appliances')
 	
-	elif text== "Accessories" or text== "accessories":
-		Main_category = text
-		df_main_category = df.query("main_category == @Main_category")
-		speak("Select the Sub Category")        
-		Sub_category = st.multiselect(
-		"Select the Sub-Category:",
-		options=df_main_category["sub_category"].unique(),
-		default=df_main_category["sub_category"].unique()
-		)
-		return 1  
-	elif text=="appliances" or text=="Appliances":
-		Main_category = text
-		df_main_category = df.query("main_category == @Main_category")
-		speak("Select the Sub Category")        
-		Sub_category = st.multiselect(
-		"Select the Sub-Category:",
-		options=df_main_category["sub_category"].unique(),
-		default=df_main_category["sub_category"].unique()
-		)
-		return 1   
-	elif text== "home and appliances" or text=="Home and appliances":
-		Main_category = text
-		df_main_category = df.query("main_category == @Main_category")
-		speak("Select the Sub Category")        
-		Sub_category = st.multiselect(
-		"Select the Sub-Category:",
-		options=df_main_category["sub_category"].unique(),
-		default=df_main_category["sub_category"].unique()
-		)
-		return 1
-	elif text == "sports and fitness" or text == "Sports and fitness" or text == "sport and fitness":
-		Main_category = text
-		df_main_category = df.query("main_category == @Main_category")
-		speak("Select the Sub Category")        
-		Sub_category = st.multiselect(
-		"Select the Sub-Category:",
-		options=df_main_category["sub_category"].unique(),
-		default=df_main_category["sub_category"].unique()
-		)
-		return 1
-	else:
-		speak("Please Say The relevant word")
-		search()
+		elif text== "Accessories" or text== "accessories":
+			Main_category = text
+			df_main_category = df.query("main_category == @Main_category")
+			speak("Select the Sub Category")        
+			Sub_category = st.multiselect(
+			"Select the Sub-Category:",
+			options=df_main_category["sub_category"].unique(),
+			default=df_main_category["sub_category"].unique()
+			)
+			return 1  
+		elif text=="appliances" or text=="Appliances":
+			Main_category = text
+			df_main_category = df.query("main_category == @Main_category")
+			speak("Select the Sub Category")        
+			Sub_category = st.multiselect(
+			"Select the Sub-Category:",
+			options=df_main_category["sub_category"].unique(),
+			default=df_main_category["sub_category"].unique()
+			)
+			return 1   
+		elif text== "home and appliances" or text=="Home and appliances":
+			Main_category = text
+			df_main_category = df.query("main_category == @Main_category")
+			speak("Select the Sub Category")        
+			Sub_category = st.multiselect(
+			"Select the Sub-Category:",
+			options=df_main_category["sub_category"].unique(),
+			default=df_main_category["sub_category"].unique()
+			)
+			return 1
+		elif text == "sports and fitness" or text == "Sports and fitness" or text == "sport and fitness":
+			Main_category = text
+			df_main_category = df.query("main_category == @Main_category")
+			speak("Select the Sub Category")        
+			Sub_category = st.multiselect(
+			"Select the Sub-Category:",
+			options=df_main_category["sub_category"].unique(),
+			default=df_main_category["sub_category"].unique()
+			)
+			return 1
+		else:
+			speak("Please Say The relevant word")
+			search()
 	st.title("CHATBOT")
 	speak("hi,i am your assistant ")
 	while(repeater==1):
@@ -87,6 +87,5 @@ if st.session_state['LOGGED_IN'] == True:
 		repeater=0
 	speak("It is my pleasure to help you,see you again, bye")
 	
-
 else:
 	st.warning("Please Loggin")

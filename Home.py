@@ -11,7 +11,7 @@ __login__obj = __login__(auth_token = "pk_prod_27GNYP246PME2HPJZEV7FX35XRX5",
 LOGGED_IN = __login__obj.build_login_ui()
 
 if LOGGED_IN == True:
-	st.set_page_config(page_title="Home", page_icon=":bar_chart:", layout="wide")
+	st.set_page_config(page_title="Home", page_icon=":bag-heart:", layout="wide")
 	st.markdown("Your Streamlit Application Begins here!")
 
 if st.session_state['LOGGED_IN'] == True:

@@ -6,8 +6,14 @@ import streamlit as st
 df = pd.read_csv('Dataset.csv')
 st.set_page_config(page_title="Sales Dashboard", page_icon=":bar_chart:", layout="wide")
 
+# ---- MAINPAGE ----
+t1, t2 = st.columns((0.12,1))
+t1.image('D:\PYTHON\amazon-logo.jpg', width = 120)
+t2.title("Amazon Sales Dashboard")
+t2.markdown("**Website:** https://www.amazon.in/ ")
+st.markdown("##")
 
-# ---- SIDEBAR ----
+# ---- DATA FILTER ----
 st.subheader("Filter Here:")
 Main_category = st.multiselect(
     "Select the Main Category:",
@@ -34,13 +40,6 @@ if((len(Main_category)==0) or (len(Sub_category)==0) or (len(Ratings)==0)):
 df_selection = df.query(
     "main_category == @Main_category & sub_category ==@Sub_category & ratings == @Ratings"
 )
-
-# ---- MAINPAGE ----
-t1, t2 = st.columns((0.12,1))
-t1.image('D:\PYTHON\amazon-logo.jpg', width = 120)
-t2.title("Amazon Sales Dashboard")
-t2.markdown("**Website:** https://www.amazon.in/ ")
-
 st.markdown("##")
 
 #TOP KPI's

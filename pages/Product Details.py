@@ -4,7 +4,6 @@ from streamlit_option_menu import option_menu
 
 # ---- READ EXCEL ----
 df = pd.read_csv('Dataset.csv')
-st.set_page_config(page_title="Product Details", page_icon=":bi-bag-heart:", layout="wide")
 
 if st.session_state['LOGGED_IN'] == True:
 	st.title("PRODUCT DETAILS")

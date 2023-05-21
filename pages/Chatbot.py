@@ -5,7 +5,7 @@ import streamlit as st
 from streamlit_chat import message as st_message
 
 df = pd.read_csv('Dataset.csv')
-
+st.title("CHATBOT")
 
 if st.session_state['LOGGED_IN'] == True:
 	repeater=1
@@ -81,7 +81,6 @@ if st.session_state['LOGGED_IN'] == True:
 		else:
 			speak("Please Say The relevant word")
 			search()
-	st.title("CHATBOT")
 	speak("hi,i am your assistant ")
 	while(repeater==1):
 		checker=search()

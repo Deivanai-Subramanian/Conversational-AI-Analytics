@@ -111,7 +111,7 @@ if st.session_state['LOGGED_IN'] == True:
 	)
 	#pie chart
 	rating_1 = round(df_selection["ratings"],0)
-		fig_pie = px.pie(
+	fig_pie = px.pie(
 		sales_by_hour,
 		values=sales_by_hour.index,
 		names="no_of_ratings",

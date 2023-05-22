@@ -14,6 +14,6 @@ MODULES OF WEB APP:
   * SALES DASHBOARD
   * PRODUCT DETAILS
 
-WEB APP DEMO LINK:
+WEB APP DEMO LINK: https://drive.google.com/drive/folders/1Xb4dkxan4CiS60JuQ7_7bv7re-VJkYKx
 
 WEB APP LINK: https://deivanai-subramanian-conversational-ai-analytics-home-r36x71.streamlit.app/

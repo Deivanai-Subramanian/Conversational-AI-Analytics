@@ -16,4 +16,4 @@ MODULES OF WEB APP:
 
 WEB APP DEMO LINK:
 
-WEB APP LINK: https://deivanai-subramanian-conversational-ai-analytics-home-4jqfmf.streamlit.app/
+WEB APP LINK: https://deivanai-subramanian-conversational-ai-analytics-home-r36x71.streamlit.app/

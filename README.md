@@ -16,4 +16,4 @@ MODULES OF WEB APP:
 
 WEB APP DEMO LINK: https://drive.google.com/drive/folders/1Xb4dkxan4CiS60JuQ7_7bv7re-VJkYKx
 
-WEB APP LINK: https://tech-aspirants-conversational-ai-analytics-home.streamlit.app/
+WEB APP LINK: https://tech-aspirants-conversational-ai-analytics.streamlit.app/

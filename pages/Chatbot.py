@@ -22,11 +22,11 @@ def query():                     #function to recognize the user voice using spe
     try:
         r = sr.Recognizer()
         with sr.Microphone() as source:
-		r.adjust_for_ambient_noise(mic, duration=0.2)
-		audio=r.listen(source)
-		text=r.recognize_google(audio)
-		st.write(text)
-        return (text)
+            r.adjust_for_ambient_noise(mic, duration=0.2)
+	    audio=r.listen(source)
+	    text=r.recognize_google(audio)
+	    st.write(text)
+            return (text)
     except:
         speak("the word is not clear,tell again")
         st.write("Tell Again ")

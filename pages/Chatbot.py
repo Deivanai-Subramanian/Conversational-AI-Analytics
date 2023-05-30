@@ -95,13 +95,11 @@ def search(): #function to search for the word in wikipedia
     else:
         speak("Please Say The relevant word")
         search()
+	
 st.title("CHATBOT")
-if st.session_state['LOGGED_IN'] == True:
-    speak("hi,i am your assistant ")
-    while(repeater==1):
-        checker=search()
-        if checker==1:
-            repeater=0
-    speak("It is my pleasure to help you,see you again, bye")
-else:
-	st.warning("Please Loggin")
+speak("hi,i am your assistant ")
+while(repeater==1):
+	checker=search()
+	if checker==1:
+		repeater=0
+speak("It is my pleasure to help you,see you again, bye")

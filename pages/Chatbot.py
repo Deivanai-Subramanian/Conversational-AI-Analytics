@@ -26,7 +26,7 @@ def query():                     #function to recognize the user voice using spe
 	    audio=r.listen(source)
 	    text=r.recognize_google(audio)
 	    st.write(text)
-            return (text)
+        return (text)
     except:
         speak("the word is not clear,tell again")
         st.write("Tell Again ")
